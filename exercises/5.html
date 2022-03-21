@@ -6,7 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Screen Readers</title>
     <link rel="stylesheet" href="../css/style.css" />
-    <style></style>
+    <style>
+      .overrideLight{
+          background: white;
+          color: #000;
+        }
+
+      .overrideDark{
+        background: black;
+        color: #fff;
+      }
+
+      @media (prefers-color-scheme: dark){
+        .main{
+          background: black;
+          color: #fff;
+        }
+      }
+
+      @media (prefers-color-scheme: light){
+        .main{
+          background: white;
+          color: #000;
+        }
+      }
+      
+    </style>
   </head>
   <body class="main">
     <header>
@@ -23,8 +48,28 @@
       </p>
       <label>
         Enable Dark Mode
-        <input id="input" type="checkbox" />
+        <input onclick="toggle()" id="input" type="checkbox" />
       </label>
     </div>
+
+    <script>
+      // grab the body
+      var main = document.querySelector(".main");
+      // set the default to light color scheme
+      var currentLightTheme = window.matchMedia(
+        "(prefers-color-scheme: light)"
+      );
+
+      function toggle(){   
+        // if light scheme is true, then set currentLightScheme to false     
+        if (currentLightTheme) {
+          main.className = 'overrideDark';
+          currentLightTheme = false;          
+        }else{
+          main.className = 'overrideLight';
+          currentLightTheme = true;
+        }
+      }
+    </script>
   </body>
 </html>

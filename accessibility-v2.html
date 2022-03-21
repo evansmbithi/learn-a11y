@@ -1,0 +1,624 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Website Accessibility, v2 | Frontend Masters</title>
+    <style>
+		body {
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+			font-size: 16px;
+			margin: 0;
+			padding: 30px;
+			background-color: #111;
+			color: #fff; 
+		}
+		
+		h2 {
+				background-color: #333;
+				color: #ccc;
+				padding: 10px;
+		}
+		h3 {
+			border-bottom: 1px solid #333;
+			padding-bottom: 6px;
+		}
+		
+		td {
+		 padding: 3px 0;
+					}
+					td a {
+							color: #ccc;
+							text-decoration: none;
+							padding-right: 20px;
+					}
+					td p {
+							display: inline;
+							margin: 0;
+							padding: 0px;
+					}
+					td p a {
+							color: #5baec0;
+							text-decoration: underline;
+					}
+					h1 a {
+							color: #5baec0;
+							text-decoration: none;
+					}
+					h3 a {
+							color: #5baec0;
+							text-decoration: none;
+					}
+					p a {
+							padding: 0px;
+					}
+					code {
+							background-color: #1e3134;
+							padding: 3px;
+			}
+    </style>
+  </head>
+  <body>
+    <h1><a href="https://frontendmasters.com/courses/accessibility-v2/" target="_blank">Website Accessibility, v2</a></h1>
+    <h2>Introduction</h2>
+    <h3><a href="https://frontendmasters.com/courses/accessibility-v2/introduction" target="_blank">Introduction</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/introduction?t=2" target="_blank">00:00:02</a></td><td><p><a href="https://learn-a11y.netlify.app/index.html">https://learn-a11y.netlify.app/index.html</a></p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/accessibility-v2/what-is-accessibility" target="_blank">What is Accessibility</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/what-is-accessibility?t=120" target="_blank">00:02:00</a></td><td><p>Web performance - making a web app or native app really small and fast so that it&rsquo;s easily usable by folks on slower connections/devices - is similar to accessiblity. However, accessibility is about people with disability.</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/what-is-accessibility?t=138" target="_blank">00:02:18</a></td><td><p>Internationalization - making your app translated and usable in people&rsquo;s native languages</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/what-is-accessibility?t=175" target="_blank">00:02:55</a></td><td><p>Web accessibility means people with disability can use the web</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/what-is-accessibility?t=196" target="_blank">00:03:16</a></td><td><p>Web accessibility means that people with disabilities can perceive, understand, navigate, and interact with the Web, and that they can contribute to the Web.</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/what-is-accessibility?t=373" target="_blank">00:06:13</a></td><td><p>Here&rsquo;s a link to the <a href="http://info.cern.ch/hypertext/WWW/TheProject.html">first website</a></p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/accessibility-v2/ways-people-use-the-web" target="_blank">Ways People Use the Web</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/ways-people-use-the-web?t=14" target="_blank">00:00:14</a></td><td><p>Always think about ways people use the web; keyboard only users - tabs, mouse only - scrolling</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/ways-people-use-the-web?t=79" target="_blank">00:01:19</a></td><td><p>How many keystrokes does it take to do something? Is everything accessible by doing keyboard only?</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/ways-people-use-the-web?t=147" target="_blank">00:02:27</a></td><td><p>screen reader - non visual way of interacting with the web</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/accessibility-v2/curb-cut-effect-and-q-a" target="_blank">Curb Cut Effect and Q&A</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/curb-cut-effect-and-q-a?t=4" target="_blank">00:00:04</a></td><td><p>The Curb-Cut Effect, in its essence, asserts that an investment in one group can cascade out and up and be a substantial investment in the broader well-being of a nation &ndash; one whose policies and practices create an equitable economy, a healthy community of opportunity, and just society.</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/curb-cut-effect-and-q-a?t=160" target="_blank">00:02:40</a></td><td><p>things that get set up for people with disability end up benefiting everyone</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/curb-cut-effect-and-q-a?t=211" target="_blank">00:03:31</a></td><td><p>Making sure that buttons are well spaced ensures people with dexterity issues don&rsquo;t have trouble targeting on them</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/accessibility-v2/accessibility-standards" target="_blank">Accessibility Standards</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/accessibility-standards?t=29" target="_blank">00:00:29</a></td><td><p>Here&rsquo;s a link to <a href="https://www.w3.org/WAI/standards-guidelines/wcag/">WCAG</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/accessibility-standards?t=130" target="_blank">00:02:10</a></td><td><p>Here are links to <a href="https://webaim.org/">WebAIM</a> and their accessibility <a href="https://webaim.org/standards/wcag/checklist">checklist</a></p>
+</td></tr>
+    </table>
+    <h2>Screen Readers</h2>
+    <h3><a href="https://frontendmasters.com/courses/accessibility-v2/screen-readers" target="_blank">Screen Readers</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/screen-readers?t=270" target="_blank">00:04:30</a></td><td><p>Here a links to check out <a href="https://www.nvaccess.org/download/">NVDA</a> for Windows and <a href="https://chrome.google.com/webstore/detail/screen-reader/kgejglhpjiefppelpmljglcjbhoiplfn?hl=en">Chrome screen reader</a></p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/accessibility-v2/alternative-text-captions" target="_blank">Alternative Text & Captions</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/alternative-text-captions?t=22" target="_blank">00:00:22</a></td><td><p>By default, when a screen reader encounters an image, if it can&rsquo;t find alt text it will read aloud the file&rsquo;s name.</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/alternative-text-captions?t=40" target="_blank">00:00:40</a></td><td><p>This gets especially tricky for user generated images which often get hashed file names.</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/alternative-text-captions?t=49" target="_blank">00:00:49</a></td><td><p>Adding an alt attribute will override that behavior. Screenreaders will read the alternative text instead of the file name.</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/alternative-text-captions?t=106" target="_blank">00:01:46</a></td><td><p>Sometimes your website will have images that are strictly for decorative purposes. In that case, an empty alt attribute will force the screen reader to skip over the image.</p>
+
+<p><img src="https://pbs.twimg.com/media/KSJHECKJH983er.jpg" alt="" /></p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/accessibility-v2/screen-reader-exercise" target="_blank">Screen Reader Exercise</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/screen-reader-exercise?t=104" target="_blank">00:01:44</a></td><td><p>narators ignore divs that have css background images</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/screen-reader-exercise?t=117" target="_blank">00:01:57</a></td><td><p>screen readers will view the image tag as content that needs to be read aloud and will not read a div with background images</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/accessibility-v2/screen-reader-solution" target="_blank">Screen Reader Solution</a></h3>
+    <h2>Accessible HTML</h2>
+    <h3><a href="https://frontendmasters.com/courses/accessibility-v2/accessible-html" target="_blank">Accessible HTML</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/accessible-html?t=42" target="_blank">00:00:42</a></td><td><p>it&rsquo;s not good practice to use divs for everything</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/accessible-html?t=78" target="_blank">00:01:18</a></td><td><p>Some elements have semantic meaning but no special functionality. Examples are:</p>
+
+<p><aside>
+<footer>
+<header>
+Other&rsquo;s provide a lot of built-in functionality such as:</p>
+
+<p><button>
+<input>
+<textarea></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/accessible-html?t=94" target="_blank">00:01:34</a></td><td><p>buttons come styling that people often don&rsquo;t like, so they will just use a span or a div then style it to fit their preferrences</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/accessible-html?t=212" target="_blank">00:03:32</a></td><td><p>Anything you do on CSS won&rsquo;t affect screen readers; always use appropriate tags then style them using classes</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/accessible-html?t=218" target="_blank">00:03:38</a></td><td><p>for instance you want a big label but it&rsquo;s technically the third nested heading use <h3> then add an appropriate class to style it</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/accessible-html?t=232" target="_blank">00:03:52</a></td><td><p>If you need a button, use a button. Don&rsquo;t use an anchored div</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/accessibility-v2/accessible-form-field-labels" target="_blank">Accessible Form Field Labels</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/accessible-form-field-labels?t=90" target="_blank">00:01:30</a></td><td><p>Form fields can be confusing for screen reader users. A common pattern is using div&rsquo;s or paragraph tags to label form fields.
+<form>
+            <p>First Name</p>
+            <input type="text" />
+            <p>Last Name</p>
+            <input type="text" />
+            <p>Password</p>
+            <input type="password" />
+            <input type="submit" value="Submit" />
+          </form></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/accessible-form-field-labels?t=118" target="_blank">00:01:58</a></td><td><p>A better option is to use the HTML label tag which will allow screen readers to recite the label when the field is focused.
+<form>
+            <label for="first">First Name</label>
+            <input id="first" type="text" />
+            <label for="last">Last Name</label>
+            <input id="last" type="text" />
+            <label for="password">Password</label>
+            <input id="password" type="password" />
+            <input type="submit" value="Submit" />
+          </form></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/accessible-form-field-labels?t=156" target="_blank">00:02:36</a></td><td><p>Another cool trick you can do is wrap your inputs with the label tag. This is called implicit labelling.
+<form>
+            <label>
+              First Name
+              <input id="first" type="text" />
+            </label>
+            <label>
+              Last Name
+              <input id="last" type="text" />
+            </label>
+            <label>
+              Password
+              <input id="password" type="password" />
+            </label>
+            <input type="submit" value="Submit" />
+          </form></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/accessible-form-field-labels?t=166" target="_blank">00:02:46</a></td><td><p>aria-label property can be added to any element to allow the screen reader to identify and read it out</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/accessible-form-field-labels?t=167" target="_blank">00:02:47</a></td><td><p>The label tag can only works with &ldquo;labelable&rdquo; elements. Those include:</p>
+
+<p><button>
+<input>
+<keygen>
+<meter>
+<output>
+<progress>
+<select>
+<textarea>
+If you ever need to label an element not on that list, use aria-label instead.</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/accessible-form-field-labels?t=167" target="_blank">00:02:47</a></td><td><p><div aria-label="Interactive div">Hello</div></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/accessible-form-field-labels?t=271" target="_blank">00:04:31</a></td><td><p>aria adds the ability of an element to be focused</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/accessible-form-field-labels?t=293" target="_blank">00:04:53</a></td><td><p>When an element is focusable, that&rsquo;s when you would add a label to it. Otherwise, it won&rsquo;t read the label because you can&rsquo;t ever focus that item</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/accessibility-v2/buttons" target="_blank">Buttons</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/buttons?t=80" target="_blank">00:01:20</a></td><td><p>screen readers can&rsquo;t listen to onclick events and know that they do sth</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/buttons?t=94" target="_blank">00:01:34</a></td><td><div role="button" onclick="alert('hello')">Click me!</div>
+
+<p>role tells the screen reader that this is a button and can be clicked</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/buttons?t=134" target="_blank">00:02:14</a></td><td><div tabindex="0" role="button" onclick="alert('hello')">Click me!</div>
+
+<p>tabindex makes the div tabable - keyboard only users to tab to it</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/buttons?t=209" target="_blank">00:03:29</a></td><td><div aria-label="Alert the word hello" tabindex="0" role="button" onclick="alert('hello')" onkeyup="alert('hello')">Click me!</div>
+
+<p>aria-label gives the div a label to explain what it does</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/buttons?t=209" target="_blank">00:03:29</a></td><td><p>This process could be simplified by just using a button tag</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/accessibility-v2/accessibility-problems-exercise" target="_blank">Accessibility Problems Exercise</a></h3>
+    <h3><a href="https://frontendmasters.com/courses/accessibility-v2/accessibility-problems-solution" target="_blank">Accessibility Problems Solution</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/accessibility-problems-solution?t=338" target="_blank">00:05:38</a></td><td><p>Using aria, you have to make sure you do all the things; role, label, tabindex, mousedown, keydown (sniffing for enter and space)</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/accessibility-problems-solution?t=394" target="_blank">00:06:34</a></td><td><p><nav> vs ordered lists
+navs provide semantic meaning but don&rsquo;t provide functionality</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/accessibility-problems-solution?t=403" target="_blank">00:06:43</a></td><td><p>Anchored tags - anything that takes you to a new page is an anchor</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/accessibility-problems-solution?t=438" target="_blank">00:07:18</a></td><td><p>Buttons vs Links
+Buttons are supposed to be used interactively on a page, not to link you to another page</p>
+</td></tr>
+    </table>
+    <h2>ARIA</h2>
+    <h3><a href="https://frontendmasters.com/courses/accessibility-v2/aria" target="_blank">ARIA</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/aria?t=7" target="_blank">00:00:07</a></td><td><p>Here&rsquo;s a link to documentation on <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA">ARIA</a> on MDN</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/aria?t=9" target="_blank">00:00:09</a></td><td><p>Accessible Rich Internet Applications (ARIA) is a set of attributes that define ways to make web content and web applications (especially those developed with JavaScript) more accessible to people with disabilities.</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/aria?t=11" target="_blank">00:00:11</a></td><td><p>ARIA is used appropriately to provide accessibility when HTML is not sufficient</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/aria?t=45" target="_blank">00:00:45</a></td><td><p><a href="https://noti.st/allisonravenhall">https://noti.st/allisonravenhall</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/aria?t=69" target="_blank">00:01:09</a></td><td><p>Here&rsquo;s a link to the <a href="https://www.w3.org/TR/html-aria/#aria-table">W3 spec with ARIA</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/aria?t=147" target="_blank">00:02:27</a></td><td><p>aria-label: inline (used within an element as an attribute)
+aria-labelledby: separate label</p>
+
+<div class="visuallyHidden" id="foo">Github Page for mbithi</div>
+
+<p><a aria-labelledby="foo" href="github.com/...">this repo</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/aria?t=223" target="_blank">00:03:43</a></td><td><p>aria-describedby: provides extensive info that the user might need. Used inline</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/aria?t=223" target="_blank">00:03:43</a></td><td><p><a type="submit" aria-label="submit form" aria-describedby="you will be redirected to the home page"?></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/aria?t=381" target="_blank">00:06:21</a></td><td><p>ARIA roles:</p>
+
+<p>button
+checkbox
+tree
+banner
+aria-autocomplete
+aria-haspopup</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/aria?t=400" target="_blank">00:06:40</a></td><td><p>Here&rsquo;s a link to a list of <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques">roles, states, and properties</a></p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/accessibility-v2/live-regions-aria-exercise" target="_blank">Live Regions & ARIA Exercise</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/live-regions-aria-exercise?t=64" target="_blank">00:01:04</a></td><td><p>.dropdown[aria-expanded=&ldquo;false&rdquo;] .icon::after {
+            content: &lsquo;▶&rsquo;;
+          }</p>
+
+<p>.dropdown[aria-expanded=&ldquo;true&rdquo;] .icon::after {
+            content: &lsquo;▼&rsquo;;
+          }</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/live-regions-aria-exercise?t=115" target="_blank">00:01:55</a></td><td><p>for notifications/interruptions coming at any time,  ARIA spec provides the ability to mark an element as containing live data so that screen readers can read out updates as they come.</p>
+
+<div aria-live="assertive">Waiting for a ride</div>
+
+<p>all we have to do is update the content of that div and any assistive technology will let the user know.</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/live-regions-aria-exercise?t=132" target="_blank">00:02:12</a></td><td><p>value that you pass in to aria-live include:</p>
+
+<p>assertive - will interrupt whatever it&rsquo;s doing to announce.</p>
+
+<p>polite - will announce the live region update when it next idles.</p>
+
+<p>off - will not read the update.</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/accessibility-v2/aria-solution" target="_blank">ARIA Solution</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/aria-solution?t=56" target="_blank">00:00:56</a></td><td><p>polite - reads through the whole page, then reads out the alert. This makes it lag behind but the catches up when the screen reader has been idle for a long time</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/aria-solution?t=197" target="_blank">00:03:17</a></td><td><p>aria-live will announce whenever any content in the element changes; scope it down to the smallest element possible</p>
+</td></tr>
+    </table>
+    <h2>Focus Management</h2>
+    <h3><a href="https://frontendmasters.com/courses/accessibility-v2/focus-management" target="_blank">Focus Management</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/focus-management?t=83" target="_blank">00:01:23</a></td><td><p>Keyboard shortcuts are another curb cut example. Sites like Twitter and Facebook offer keyboard shortcuts for almost any action which are great for both keyboard only users and and power users!</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/focus-management?t=219" target="_blank">00:03:39</a></td><td><p>Here&rsquo;s a link to check out Jon&rsquo;s <a href="https://github.com/jkup/shortcut">shortcut library</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/focus-management?t=232" target="_blank">00:03:52</a></td><td><p>shortcut.js library creates a framework for keyboard shortcuts that trigger various events on a website eg fullscreen, search</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/accessibility-v2/skip-links" target="_blank">Skip Links</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/skip-links?t=60" target="_blank">00:01:00</a></td><td><p>skip basically saves a user the pain of navigating through all nav links to get to the main content
+When a user hits tab for the first time, a button will appear and offer users to jump right to the main section.</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/skip-links?t=91" target="_blank">00:01:31</a></td><td><p>Create an anchor with the body &ldquo;Skip to content&rdquo; and the target of that anchor be the main content
+Prepend it to the body of your website
+Make it visually hidden
+Give it a focus state which makes it visible</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/accessibility-v2/focus-management-q-a" target="_blank">Focus Management Q&A</a></h3>
+    <h3><a href="https://frontendmasters.com/courses/accessibility-v2/tab-navigation" target="_blank">Tab Navigation</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/tab-navigation?t=127" target="_blank">00:02:07</a></td><td><p>Here&rsquo;s a link to the <a href="https://github.com/jkup/focusable">Focusable</a> Github repo</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/tab-navigation?t=207" target="_blank">00:03:27</a></td><td><p>a negative tabindex is focusable but not accessible via sequential keyboard navigation</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/tab-navigation?t=286" target="_blank">00:04:46</a></td><td><p>a positive tabindex means if it&rsquo;s a higher value, it&rsquo;ll be the first to be tabbed into. Works like z-index</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/accessibility-v2/active-element-tab-trapping" target="_blank">Active Element & Tab Trapping</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/active-element-tab-trapping?t=17" target="_blank">00:00:17</a></td><td><p>active returns the currently focused item</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/active-element-tab-trapping?t=482" target="_blank">00:08:02</a></td><td><p>9 is the key code for tab</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/accessibility-v2/skip-link-exercise" target="_blank">Skip Link Exercise</a></h3>
+    <h3><a href="https://frontendmasters.com/courses/accessibility-v2/skip-link-solution" target="_blank">Skip Link Solution</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/skip-link-solution?t=162" target="_blank">00:02:42</a></td><td><p>a:focus makes the anchor element tabable</p>
+</td></tr>
+    </table>
+    <h2>Visual Considerations</h2>
+    <h3><a href="https://frontendmasters.com/courses/accessibility-v2/color-contrast-visual-impairments" target="_blank">Color Contrast & Visual Impairments</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/color-contrast-visual-impairments?t=72" target="_blank">00:01:12</a></td><td><p>Here&rsquo;s a link to the <a href="https://webaim.org/resources/contrastchecker/">WebAIM contrast checker</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/color-contrast-visual-impairments?t=305" target="_blank">00:05:05</a></td><td><p>An important consideration for colorblind users is making sure that color isn&rsquo;t the only way users can tell if there is an error with the form. For example, a red ring is not enough. Consider adding an icon or an error label.</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/color-contrast-visual-impairments?t=390" target="_blank">00:06:30</a></td><td><p>Here&rsquo;s a link for the <a href="https://addons.mozilla.org/en-US/firefox/addon/nocoffee/">NoCoffee</a> add on for Firefox</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/color-contrast-visual-impairments?t=441" target="_blank">00:07:21</a></td><td><p> NoCoffee for Firefox vision simulator</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/color-contrast-visual-impairments?t=539" target="_blank">00:08:59</a></td><td><p>Using Big fonts, good color contrast and keeping like things near each other are really a big help for the visually impaired users</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/color-contrast-visual-impairments?t=575" target="_blank">00:09:35</a></td><td><p>Proximity of notifications from what you&rsquo;re doing - keeping like things together - Helps neurological and also low vision</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/accessibility-v2/set-language-fixing-markup" target="_blank">Set Language & Fixing Markup</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/set-language-fixing-markup?t=38" target="_blank">00:00:38</a></td><td><p>Setting language is required for a website to have full conformance and hold subsections of the page from deviating to other languages</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/set-language-fixing-markup?t=94" target="_blank">00:01:34</a></td><td><p>Here&rsquo;s a link to W3&rsquo;s <a href="https://validator.w3.org/">Markup Validation Service</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/set-language-fixing-markup?t=101" target="_blank">00:01:41</a></td><td><p>validator.w3.org</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/set-language-fixing-markup?t=135" target="_blank">00:02:15</a></td><td><p>HTML validator checks for errors in the HTML semantics (Markup issues)</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/accessibility-v2/prefers-reduced-motion" target="_blank">Prefers Reduced Motion</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/prefers-reduced-motion?t=132" target="_blank">00:02:12</a></td><td><p>Prefers reduced motion for users with seizures
+.animation {
+            animation: pulse 1s linear infinite both;
+          }</p>
+
+<pre><code>      @media (prefers-reduced-motion) {
+        .animation {
+          animation-name: dissolve;
+</code></pre>
+
+<p>//or no animation at all
+            }
+          }</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/accessibility-v2/prefers-color-scheme-visuals-exercise" target="_blank">Prefers Color Scheme & Visuals Exercise</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/prefers-color-scheme-visuals-exercise?t=58" target="_blank">00:00:58</a></td><td><p>@media (prefers-color-scheme: dark) {
+            .wrapper {
+              background: black;
+            }
+          }</p>
+
+<pre><code>      @media (prefers-color-scheme: light) {
+        .wrapper {
+          background: white;
+        }
+      }
+</code></pre>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/prefers-color-scheme-visuals-exercise?t=66" target="_blank">00:01:06</a></td><td><p>Prefers-color-scheme allows websites to be dynamic where as soon as the page loads whatever the OS color is set to it automatically adjusts</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/prefers-color-scheme-visuals-exercise?t=154" target="_blank">00:02:34</a></td><td><p>Light mode/dark mode could get tricky if offered as a clickable experience</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/accessibility-v2/visuals-solution" target="_blank">Visuals Solution</a></h3>
+    <h2>Tooling</h2>
+    <h3><a href="https://frontendmasters.com/courses/accessibility-v2/accessibility-linters-dev-tools" target="_blank">Accessibility Linters & Dev Tools</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/accessibility-linters-dev-tools?t=50" target="_blank">00:00:50</a></td><td><p>Here are links to the <a href="https://www.npmjs.com/package/eslint-plugin-jsx-a11y">eslint-plugin-jsx</a>, <a href="https://github.com/mgechev/codelyzer">Angular Codelyzer</a>, and <a href="https://github.com/vue-a11y/eslint-plugin-vuejs-accessibility">eslint-plugin-vuejs</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/accessibility-linters-dev-tools?t=99" target="_blank">00:01:39</a></td><td><p>Here are link to <a href="https://react-spectrum.adobe.com/react-spectrum/">Adobe&rsquo;s React Spectrum</a>, <a href="https://material.io/design">Google&rsquo;s Material Design</a>, <a href="https://getbootstrap.com/2.3.2/">Twitter&rsquo;s Bootstrap</a>, and <a href="https://get.foundation/">Foundation</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/accessibility-linters-dev-tools?t=145" target="_blank">00:02:25</a></td><td><p>Here are links to <a href="https://chrome.google.com/webstore/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US">Deque&rsquo;s axe DevTools</a> and <a href="https://developers.google.com/web/tools/lighthouse">Google&rsquo;s Lighthouse</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/accessibility-linters-dev-tools?t=187" target="_blank">00:03:07</a></td><td><p>Tools for accessibility testing:
+Axe Dev Tools - chrome extension
+LightHouse - Chrome Dev tool</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/accessibility-linters-dev-tools?t=327" target="_blank">00:05:27</a></td><td><p>Check out Jon&rsquo;s <a href="https://frontendmasters.com/courses/dev-tools/">Introduction to DevTools</a> course on Frontend Masters</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/accessibility-v2/additional-resources" target="_blank">Additional Resources</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/additional-resources?t=10" target="_blank">00:00:10</a></td><td><p>Here are links to <a href="https://www.w3.org/WAI/standards-guidelines/wcag/">WCAG</a> and <a href="https://webaim.org/">WebAIM</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/additional-resources?t=15" target="_blank">00:00:15</a></td><td><p>Here&rsquo;s a link to check out <a href="https://www.microsoft.com/design/inclusive/">Microsoft Inclusive Design</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/additional-resources?t=58" target="_blank">00:00:58</a></td><td><p>Here&rsquo;s a link to check out <a href="https://globalaccessibilityawarenessday.org/">Global Accessibility Awareness Day</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/additional-resources?t=115" target="_blank">00:01:55</a></td><td><p>Check out Marcy Sutton&rsquo;s <a href="https://frontendmasters.com/courses/javascript-accessibility/">Accessibility in JavaScript Applications</a> course on Frontend Masters</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/additional-resources?t=118" target="_blank">00:01:58</a></td><td><p>Resources
+Web Content Accessibility Guidelines (WCAG)
+WebAIM
+Microsoft Inclusive Design
+Global Accessibility Awareness Day
+Accessibility in JavaScript Applications
+Start Building Accessible Web Applications Today
+Accessibility Tips &amp; Tricks</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/additional-resources?t=128" target="_blank">00:02:08</a></td><td><p>Here&rsquo;s a link for <a href="https://egghead.io/courses/accessibility-tips-tricks-49286904">Accessibility Tips &amp; Tricks</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/additional-resources?t=130" target="_blank">00:02:10</a></td><td><p>Here&rsquo;s a link for how to <a href="https://egghead.io/courses/start-building-accessible-web-applications-today">Start Building Accessible Web Applications Today</a></p>
+</td></tr>
+    </table>
+    <h2>Wrapping Up</h2>
+    <h3><a href="https://frontendmasters.com/courses/accessibility-v2/wrapping-up" target="_blank">Wrapping Up</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/wrapping-up?t=10" target="_blank">00:00:10</a></td><td><p>Here&rsquo;s a link to the <a href="https://ajkaluk.com/">website</a> Jon is auditing</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/wrapping-up?t=454" target="_blank">00:07:34</a></td><td><p>Here&rsquo;s a link to <a href="https://www.npmjs.com/package/react-intl">React Intl</a> on npm</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/accessibility-v2/wrapping-up?t=520" target="_blank">00:08:40</a></td><td><p>Here&rsquo;s a link to the <a href="https://forestry.io/blog/creating-a-multilingual-blog-with-jekyll/">Creating a Multilingual Blog With Jekyll</a> post on Forestry</p>
+</td></tr>
+    </table>
+    </body>
+</html>

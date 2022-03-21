@@ -29,11 +29,19 @@
         </li>
       </ol>
       <form>
-        <p>First Name:</p>
-        <input type="text" />
-        <p>Last Name:</p>
-        <input type="text" />
-        <div class="button">Submit</div>
+        <label>
+          <!-- implicit labelling
+          where the input is just wrapped inside the label elements -->
+          First Name:
+          <input type="text" />
+        </label>
+        
+        <label>
+          Last Name:
+          <input type="text" />
+        </label>
+        
+        <button class="button">Submit</button>
       </form>
       <img src="../static/kitten.jpeg" />
     </div>

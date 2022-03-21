@@ -23,9 +23,16 @@
         updates! Turn your screen reader on to test. Experiment with how
         changing between polite and assertive changes your experience.
       </p>
+      <!-- 
+          For notifications/interruptions coming at any time,  ARIA spec provides the ability to mark an element as containing live data so that screen readers can read out updates as they come. All we have to do is update the content of that div and any assistive technology will let the user know.
+          value that you pass in to aria-live include:
+          assertive - will interrupt whatever it's doing to announce.
+          polite - will announce the live region update when it next idles.
+          off - will not read the update. 
+        -->
       <div>
         You have
-        <div id="counter">0</div>
+        <div aria-live="assertive" id="counter">0</div>
         likes on your website
       </div>
     </div>
