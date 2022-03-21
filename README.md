@@ -5,6 +5,7 @@ A web app for learning web accessibility.
 This is meant to accompany my Introduction to Accessibility workshop on Frontend Masters but my hope is that it will stand fine on its own.
 
 To view this course online, head over to [learn-a11y.netlify.com](https://learn-a11y.netlify.app/)!
+https://evansmbithi.github.io/learn-a11y/
 
 ## Installation
 
